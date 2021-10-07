@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="post-entry">
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.category }}</p>
+        {% for post in product.characteristic %}
+            <div class="post-entry">
+            </div>
+        {% endfor %}
+    </div>
+{% endblock content %}
